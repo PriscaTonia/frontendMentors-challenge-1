@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    /* font-family: 'Lexend Deca', sans-serif; */
+}
+main{
+    width: 100%;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+    padding: 100px;
+}
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 8px;
+    min-height: 60vh;
+}
+.main-img-mobile{
+    display: none;
+}
+.main-img{
+    display: flex;
+    background-image: url(images/image-header-desktop.jpg);
+    box-shadow: inset 0 0 0 2000px hsla(277, 64%, 61%, 0.3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 8px 8px 0;
+}
+.main-info{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-info h1{
+    width: 80%;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.main-info h1 span{
+    color: hsl(277, 64%, 61%);
+}
+.main-info p{
+    width: 80%;
+    color: hsla(0, 0%, 100%, 0.4);
+}
+.main-stats{
+    display: flex;
+}
+.main-stats p{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+.main-stats p span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+    padding-top: 5px;
+}
+
+
+
+
+
+@media screen  and (min-width: 375px) and ( max-width: 450px){
+    main{
+        padding: 20px;
+
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        border-radius: 8px 8px 0 0;
+    }
+    .main-img{
+        display: none;
+    }
+    .main-img-mobile{
+        display: flex;
+        min-height: 50vh;
+        background-image: url(images/image-header-mobile.jpg);
+        box-shadow: inset 0 0 0 2000px hsla(277, 64%, 61%, 0.5);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 8px 8px 0 0;
+    }
+    .main-info{
+        padding: 25px;
+        flex: 1;
+        min-height: 80vh;
+    }
+    .main-info h1, .main-info p{
+        width: 100%;
+        text-align: center;
+    }
+    .main-info p{
+        width: 100%;
+        line-height: 1rem;
+        padding: 20px;
+    }
+    .main-stats p span{
+        padding-bottom: 10px;
+    }
+   .main-stats{
+       flex-direction: column;
+   }
+   
+}
